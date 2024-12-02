@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario Uso de Redes Sociales</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800 p-6">
+
+    <div class="max-w-4xl mx-auto bg-white rounded-lg shadow p-6">
+        <h1 class="text-2xl font-bold text-center mb-6">Cuestionario: Uso de Redes Sociales</h1>
+        <form id="cuestionario">
+            <!-- Preguntas -->
+            <div class="space-y-6">
+                <!-- Pregunta -->
+                <div>
+                    <p class="font-medium">1. ¿Si hubiera un test para medir el uso de las redes sociales la usarías?
+                    </p>
+                    <div class="flex space-x-4 mt-2">
+                        <label>
+                            <input type="radio" name="pregunta1" value="a" class="mr-2"> a) Totalmente en desacuerdo
+                        </label>
+                        <label>
+                            <input type="radio" name="pregunta1" value="b" class="mr-2"> b) En desacuerdo
+                        </label>
+                        <label>
+                            <input type="radio" name="pregunta1" value="c" class="mr-2"> c) De acuerdo
+                        </label>
+                        <label>
+                            <input type="radio" name="pregunta1" value="d" class="mr-2"> d) Totalmente de acuerdo
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Repite para todas las preguntas -->
+                <div>
+                    <p class="font-medium">2. ¿Crees que realizar un test sobre el uso de redes sociales te ayudaría a
+                        controlar tu tiempo en ellas?</p>
+                    <div class="flex space-x-4 mt-2">
+                        <label>
+                            <input type="radio" name="pregunta2" value="a" class="mr-2"> a) Totalmente en desacuerdo
+                        </label>
+                        <label>
+                            <input type="radio" name="pregunta2" value="b" class="mr-2"> b) En desacuerdo
+                        </label>
+                        <label>
+                            <input type="radio" name="pregunta2" value="c" class="mr-2"> c) De acuerdo
+                        </label>
+                        <label>
+                            <input type="radio" name="pregunta2" value="d" class="mr-2"> d) Totalmente de acuerdo
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Añade el resto de las preguntas con la misma estructura -->
+                <div>
+                    <p class="font-medium">3. ¿Te preocuparía la privacidad de tus datos si realizas un test de uso de
+                        redes sociales?</p>
+                    <div class="flex space-x-4 mt-2">
+                        <label><input type="radio" name="pregunta3" value="a" class="mr-2"> a) Totalmente en
+                            desacuerdo</label>
+                        <label><input type="radio" name="pregunta3" value="b" class="mr-2"> b) En desacuerdo</label>
+                        <label><input type="radio" name="pregunta3" value="c" class="mr-2"> c) De acuerdo</label>
+                        <label><input type="radio" name="pregunta3" value="d" class="mr-2"> d) Totalmente de
+                            acuerdo</label>
+                    </div>
+                </div>
+
+                <!-- Copia y pega más bloques aquí para las preguntas 4 a 11 -->
+                <div>
+                    <p class="font-medium">4. ¿Necesito la aprobación de los demás para sentirme bien conmigo mismo?</p>
+                    <div class="flex space-x-4 mt-2">
+                        <label><input type="radio" name="pregunta4" value="a" class="mr-2"> a) Totalmente en
+                            desacuerdo</label>
+                        <label><input type="radio" name="pregunta4" value="b" class="mr-2"> b) En desacuerdo</label>
+                        <label><input type="radio" name="pregunta4" value="c" class="mr-2"> c) De acuerdo</label>
+                        <label><input type="radio" name="pregunta4" value="d" class="mr-2"> d) Totalmente de
+                            acuerdo</label>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="font-medium">5. ¿Soy critico conmigo mismo?</p>
+                    <div class="flex space-x-4 mt-2">
+                        <label><input type="radio" name="pregunta5" value="a" class="mr-2"> a) Totalmente en
+                            desacuerdo</label>
+                        <label><input type="radio" name="pregunta5" value="b" class="mr-2"> b) En desacuerdo</label>
+                        <label><input type="radio" name="pregunta5" value="c" class="mr-2"> c) De acuerdo</label>
+                        <label><input type="radio" name="pregunta5" value="d" class="mr-2"> d) Totalmente de
+                            acuerdo</label>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="font-medium">6. ¿Siente la necesidad de revisar mis redes sociales constantemente?</p>
+                    <div class="flex space-x-4 mt-2">
+                        <label><input type="radio" name="pregunta6" value="a" class="mr-2"> a) Totalmente en
+                            desacuerdo</label>
+                        <label><input type="radio" name="pregunta6" value="b" class="mr-2"> b) En desacuerdo</label>
+                        <label><input type="radio" name="pregunta6" value="c" class="mr-2"> c) De acuerdo</label>
+                        <label><input type="radio" name="pregunta6" value="d" class="mr-2"> d) Totalmente de
+                            acuerdo</label>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="font-medium">7. ¿Prefiero pasar tiempo en redes sociales que estudiar?</p>
+                    <div class="flex space-x-4 mt-2">
+                        <label><input type="radio" name="pregunta7" value="a" class="mr-2"> a) Totalmente en
+                            desacuerdo</label>
+                        <label><input type="radio" name="pregunta7" value="b" class="mr-2"> b) En desacuerdo</label>
+                        <label><input type="radio" name="pregunta7" value="c" class="mr-2"> c) De acuerdo</label>
+                        <label><input type="radio" name="pregunta7" value="d" class="mr-2"> d) Totalmente de
+                            acuerdo</label>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="font-medium">8. ¿Le cuesta conciliar el sueño la mayoría de las noches?</p>
+                    <div class="flex space-x-4 mt-2">
+                        <label><input type="radio" name="pregunta8" value="a" class="mr-2"> a) Totalmente en
+                            desacuerdo</label>
+                        <label><input type="radio" name="pregunta8" value="b" class="mr-2"> b) En desacuerdo</label>
+                        <label><input type="radio" name="pregunta8" value="c" class="mr-2"> c) De acuerdo</label>
+                        <label><input type="radio" name="pregunta8" value="d" class="mr-2"> d) Totalmente de
+                            acuerdo</label>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="font-medium">9. ¿El uso de las redes sociales dificulta mi capacidad para
+                        recordar información?</p>
+                    <div class="flex space-x-4 mt-2">
+                        <label><input type="radio" name="pregunta9" value="a" class="mr-2"> a) Totalmente en
+                            desacuerdo</label>
+                        <label><input type="radio" name="pregunta9" value="b" class="mr-2"> b) En desacuerdo</label>
+                        <label><input type="radio" name="pregunta9" value="c" class="mr-2"> c) De acuerdo</label>
+                        <label><input type="radio" name="pregunta9" value="d" class="mr-2"> d) Totalmente de
+                            acuerdo</label>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="font-medium">10. ¿Me concentro mejor en un ambiente tranquilo y sin distracciones?</p>
+                    <div class="flex space-x-4 mt-2">
+                        <label><input type="radio" name="pregunta10" value="a" class="mr-2"> a) Totalmente en
+                            desacuerdo</label>
+                        <label><input type="radio" name="pregunta10" value="b" class="mr-2"> b) En desacuerdo</label>
+                        <label><input type="radio" name="pregunta10" value="c" class="mr-2"> c) De acuerdo</label>
+                        <label><input type="radio" name="pregunta10" value="d" class="mr-2"> d) Totalmente de
+                            acuerdo</label>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="font-medium">11. ¿Resulta difícil resistir la tentación de revisar las redes sociales
+                        cuando estoy estudiando?</p>
+                    <div class="flex space-x-4 mt-2">
+                        <label><input type="radio" name="pregunta11" value="a" class="mr-2"> a) Totalmente en
+                            desacuerdo</label>
+                        <label><input type="radio" name="pregunta11" value="b" class="mr-2"> b) En desacuerdo</label>
+                        <label><input type="radio" name="pregunta11" value="c" class="mr-2"> c) De acuerdo</label>
+                        <label><input type="radio" name="pregunta11" value="d" class="mr-2"> d) Totalmente de
+                            acuerdo</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Botón para generar resultados -->
+            <div class="mt-6 text-center">
+                <button type="button" onclick="generarResultados()"
+                    class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded shadow">
+                    Generar Resultados
+                </button>
+            </div>
+        </form>
+
+        <!-- Resultado -->
+        <div id="resultado" class="mt-6 bg-gray-50 border-l-4 border-blue-500 p-4 hidden">
+            <h2 class="text-xl font-semibold">Tus Resultados:</h2>
+            <p id="detalleResultado" class="mt-2"></p>
+        </div>
+
+        <!-- Contenedor de la gráfica -->
+        <div class="mt-6 hidden" id="grafica">
+            <h2 class="text-xl font-semibold text-center mb-4">Interpretación de Resultados</h2>
+            <canvas id="chart" width="400" height="200"></canvas>
+        </div>
+
+        <div class="mt-6 hidden" id="contacto">
+
+        </div>
+    </div>
+
+    <script>
+        function generarResultados() {
+            const form = document.getElementById("cuestionario");
+            const resultadoDiv = document.getElementById("resultado");
+            const detalleResultado = document.getElementById("detalleResultado");
+            const graficaDiv = document.getElementById("grafica");
+            const respuestas = Array.from(new FormData(form).values());
+
+            if (respuestas.length < 11) {
+                alert("Por favor, responde todas las preguntas antes de generar los resultados.");
+                return;
+            }
+
+            // Categorizar respuestas
+            const categorias = { "a": 0, "b": 0, "c": 0, "d": 0 };
+            respuestas.forEach(r => categorias[r]++);
+
+            // Mostrar resultados
+            resultadoDiv.classList.remove("hidden");
+            detalleResultado.textContent = `Tus respuestas se distribuyen así: Totalmente en desacuerdo (${categorias.a}), En desacuerdo (${categorias.b}), De acuerdo (${categorias.c}), Totalmente de acuerdo (${categorias.d}).`;
+
+            // Mostrar gráfica
+            graficaDiv.classList.remove("hidden");
+            const ctx = document.getElementById("chart").getContext("2d");
+            new Chart(ctx, {
+                type: "bar",
+                data: {
+                    labels: ["Estrés", "Ansiedad", "Distracción", "Insomnio"],
+                    datasets: [{
+                        label: "Respuestas",
+                        data: [categorias.a, categorias.b, categorias.c, categorias.d],
+                        backgroundColor: [
+                            "rgba(255, 99, 132, 0.5)",
+                            "rgba(54, 162, 235, 0.5)",
+                            "rgba(75, 192, 192, 0.5)",
+                            "rgba(153, 102, 255, 0.5)"
+                        ],
+                        borderColor: [
+                            "rgba(255, 99, 132, 1)",
+                            "rgba(54, 162, 235, 1)",
+                            "rgba(75, 192, 192, 1)",
+                            "rgba(153, 102, 255, 1)"
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
