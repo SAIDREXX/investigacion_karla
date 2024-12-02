@@ -137,7 +137,7 @@ import Layout from "../layouts/Layout.astro";
 			});
 
 			if (response.ok) {
-				window.location.href = "/";
+				window.location.href = "/login";
 			} else {
 				const error = await response.json();
 				alert(
