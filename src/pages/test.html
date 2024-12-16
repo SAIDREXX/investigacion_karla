@@ -193,7 +193,22 @@
         </div>
 
         <div class="mt-6 hidden" id="contacto">
-
+<h2 class="text-xl font-semibold text-center mb-4">Contacto</h2>
+<div class="flex">
+    <ul>
+        <li>
+            <h2> Psicologa </h2>
+            <span>+52 2731457897 </span>
+        </li>
+        <li>
+            <h2> Tutor académico </h2>
+            <span>+52 2734567211 </span>
+        </li>
+        <li>
+            <h2> Jefatura de Carrera </h2>
+            <span>+52 2731230128 </span>
+    </ul>
+</div>
         </div>
     </div>
 
@@ -204,6 +219,7 @@
             const detalleResultado = document.getElementById("detalleResultado");
             const graficaDiv = document.getElementById("grafica");
             const respuestas = Array.from(new FormData(form).values());
+            const contactoDiv = document.getElementById("contacto");
 
             if (respuestas.length < 11) {
                 alert("Por favor, responde todas las preguntas antes de generar los resultados.");
@@ -253,6 +269,7 @@
                 }
             });
         }
+        contactoDiv.classList.remove("hidden");
     </script>
 
 </body>
